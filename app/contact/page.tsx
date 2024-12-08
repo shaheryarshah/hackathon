@@ -62,14 +62,13 @@ const ContactUs = () => {
                     </div>
                     <div className="mb-4">
                         <label className="block text-sm font-medium mb-2" htmlFor="message">Message</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            className="w-full p-2 border border-gray-300 rounded" 
-                            rows="4" 
-                            placeholder="Your Message" 
-                            required 
-                        ></textarea>
+                        <textarea
+  name="message"
+  className="w-full p-2 border border-gray-300 rounded"
+  rows={4}  // Change from rows="4" to rows={4}
+  placeholder="Your Message"
+  required
+></textarea>
                     </div>
                     <button className="bg-pink-500 text-white px-4 py-2 rounded">
                         Send Message
