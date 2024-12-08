@@ -11,6 +11,8 @@ const Promotion = () => {
                 <Image
                     src="/path-to-your-clock-image.jpg"
                     alt="Clock"
+                     height={224} // Specify height
+                  className="mx-auto h-12 w-12"
                     className="w-24 h-24 mb-4"
                 />
                 <button className="bg-blue-500 text-white px-4 py-2 rounded">Shop Now</button>
