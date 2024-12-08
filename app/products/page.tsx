@@ -1,4 +1,5 @@
 // pages/product.js
+import Image from "next/image";
 
 export default function ProductDetails() {
     return (
@@ -6,7 +7,7 @@ export default function ProductDetails() {
         <h1 className="text-3xl font-bold mb-6">Product Details</h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-            <image
+            <Image
               src="/p1.png"
               alt="Product"
               className="w-full h-auto rounded-lg"
