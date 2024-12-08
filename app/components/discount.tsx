@@ -7,7 +7,7 @@ const Promotion = () => {
             {/* Left Section */}
             <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center w-full md:w-1/2">
                 <h2 className="text-lg font-bold mb-2">23% off in all products</h2>
-                <img
+                <image
                     src="/path-to-your-clock-image.jpg"
                     alt="Clock"
                     className="w-24 h-24 mb-4"
