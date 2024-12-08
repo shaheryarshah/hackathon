@@ -15,7 +15,7 @@ const Products = () => {
       { img: "/tp4.png", name: "Bluetooth Speaker", price: "Under $80" }
     ].map((product, idx) => (
       <div key={idx} className="bg-white p-4 rounded-lg shadow-md text-center">
-        <img
+        <image
           src={product.img}
           alt="Product Image"
           className="h-32 mx-auto mb-4"
@@ -56,7 +56,7 @@ const Products = () => {
             </button>
           </div>
           <div className="flex justify-center">
-            <img
+            <image
               src="/chair.png"
               alt="Discount Chair"
               className="h-64 rounded-lg shadow-lg"
@@ -80,7 +80,7 @@ const Products = () => {
         key={idx}
         className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md"
       >
-        <img
+        <image
           src={category.img}
           alt={category.title}
           className="h-80 mb-4"
@@ -125,7 +125,7 @@ const Products = () => {
       { img: "/1c.png", title: "5 Tips for Organizing Your Home", description: "Get organized with these simple and effective home organization tips." }
     ].map((blog, idx) => (
       <div key={idx} className="bg-white p-4 rounded-lg shadow-md">
-        <img
+        <image
           src={blog.img}
           alt="Blog Post"
           className="h-80 w-full object-cover rounded-lg mb-4"
