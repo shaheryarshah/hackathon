@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/Image";
 import React from "react";
 
 const Products = () => {
@@ -9,14 +9,14 @@ const Products = () => {
   <h2 className="text-3xl font-bold text-center mb-8">Trending Products</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {[
-      { image: "/tp1.png", name: "Comfort Chair", price: "Under $100" },
-      { image: "/tp2.png", name: "Modern Lamp", price: "Under $50" },
-      { image: "/tp3.png", name: "Desk Organizer", price: "Under $30" },
-      { image: "/tp4.png", name: "Bluetooth Speaker", price: "Under $80" }
+      { Image: "/tp1.png", name: "Comfort Chair", price: "Under $100" },
+      { Image: "/tp2.png", name: "Modern Lamp", price: "Under $50" },
+      { Image: "/tp3.png", name: "Desk Organizer", price: "Under $30" },
+      { Image: "/tp4.png", name: "Bluetooth Speaker", price: "Under $80" }
     ].map((product, idx) => (
       <div key={idx} className="bg-white p-4 rounded-lg shadow-md text-center">
-        <image
-          src={product.image}
+        <Image
+          src={product.Image}
           alt="Product Image"
           className="h-32 mx-auto mb-4"
         />
@@ -56,7 +56,7 @@ const Products = () => {
             </button>
           </div>
           <div className="flex justify-center">
-            <image
+            <Image
               src="/chair.png"
               alt="Discount Chair"
               className="h-64 rounded-lg shadow-lg"
@@ -70,18 +70,18 @@ const Products = () => {
   <h2 className="text-3xl font-bold text-center mb-8">Top Categories</h2>
   <div className="flex justify-center space-x-6">
     {[
-      { image: "/tc1.png", title: "Mini LCW Chair", price: "$300" },
-      { image: "/tc2.png", title: "Modern Sofa", price: "$500" },
-      { image: "/tc3.png", title: "Office Desk", price: "$200" },
-      { image: "/tc4.png", title: "Wooden Coffee Table", price: "$150" },
+      { Image: "/tc1.png", title: "Mini LCW Chair", price: "$300" },
+      { Image: "/tc2.png", title: "Modern Sofa", price: "$500" },
+      { Image: "/tc3.png", title: "Office Desk", price: "$200" },
+      { Image: "/tc4.png", title: "Wooden Coffee Table", price: "$150" },
      
     ].map((category, idx) => (
       <div
         key={idx}
         className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md"
       >
-        <image
-          src={category.image}
+        <Image
+          src={category.Image}
           alt={category.title}
           className="h-80 mb-4"
         />
@@ -120,13 +120,13 @@ const Products = () => {
   <h2 className="text-3xl font-bold text-center mb-8">Latest Blog</h2>
   <div className="grid  grid-cols-1 md:grid-cols-3 gap-6">
     {[
-      { image: "/1a.png", title: "How to Choose the Right Chair", description: "Learn how to choose the best chair for comfort and style." },
-      { image: "/1b.png", title: "Top Home Decor Trends", description: "Discover the latest trends in home decor for 2024." },
-      { image: "/1c.png", title: "5 Tips for Organizing Your Home", description: "Get organized with these simple and effective home organization tips." }
+      { Image: "/1a.png", title: "How to Choose the Right Chair", description: "Learn how to choose the best chair for comfort and style." },
+      { Image: "/1b.png", title: "Top Home Decor Trends", description: "Discover the latest trends in home decor for 2024." },
+      { Image: "/1c.png", title: "5 Tips for Organizing Your Home", description: "Get organized with these simple and effective home organization tips." }
     ].map((blog, idx) => (
       <div key={idx} className="bg-white p-4 rounded-lg shadow-md">
-        <image
-          src={blog.image}
+        <Image
+          src={blog.Image}
           alt="Blog Post"
           className="h-80 w-full object-cover rounded-lg mb-4"
         />
