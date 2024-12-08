@@ -1,3 +1,4 @@
+import Image from "next/image";
 // components/GridDefault.js
 import React from 'react';
 
@@ -25,9 +26,11 @@ const GridDefault = () => {
                 {/* Map over the items array */}
                 {items.map((item, index) => (
                     <div key={index} className="bg-gray-200 h-[600px] flex flex-col justify-between rounded-lg overflow-hidden shadow-lg">
-                        <image 
+                        <Image 
                             src={item.imgSrc} 
                             alt={item.title} 
+                                                      width={500}  // Specify width
+    height={224} // Specify height
                             className="w-full h-[400px] object-cover"
                         />
                         <div className="p-2 flex flex-col justify-between h-full">
