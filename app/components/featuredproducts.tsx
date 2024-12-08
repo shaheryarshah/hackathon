@@ -17,6 +17,8 @@ export default function Featuredproducts (){
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp1.png"
+                width={500}  // Specify width
+    height={224} // Specify height
             />
             <div className="w-full">
               <h2 className="title-font font-medium text-lg text-gray-900">
@@ -79,6 +81,8 @@ export default function Featuredproducts (){
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp2.png"
+                width={500}  // Specify width
+    height={224} // Specify height
             />
             <div className="w-full">
               <h2 className="title-font font-medium text-lg text-gray-900">
@@ -138,6 +142,8 @@ export default function Featuredproducts (){
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp3.png"
+                width={500}  // Specify width
+    height={224} // Specify height
             />
             <div className="w-full">
               <h2 className="title-font font-medium text-lg text-gray-900">
@@ -197,6 +203,8 @@ export default function Featuredproducts (){
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp4.png"
+                width={500}  // Specify width
+    height={224} // Specify height
             />
             <div className="w-full">
               <h2 className="title-font font-medium text-lg text-gray-900">
