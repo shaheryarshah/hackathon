@@ -20,7 +20,7 @@ export default function Shopex() {
           ].map((offer, index) => (
             <div key={index} className="bg-white shadow-md p-6 rounded-lg">
               <div className="mb-4">
-                <img
+                <image
                   src={offer.img}
                   alt={offer.title}
                   className="mx-auto h-12 w-12"
@@ -40,7 +40,7 @@ export default function Shopex() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center">
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <img
+            <image
               src="/sofa.png"
               alt="Sofa"
               className="w-full max-w-sm mx-auto rounded-md shadow-md"
