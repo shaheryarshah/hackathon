@@ -10,6 +10,8 @@ export default function ProductDetails() {
             <Image
               src="/p1.png"
               alt="Product"
+                  height={224} // Specify height
+                            className="w-full h-[400px] object-cover"
               className="w-full h-auto rounded-lg"
             />
           </div>
@@ -55,7 +57,8 @@ export default function ProductDetails() {
               <p>⭐⭐⭐⭐⭐</p>
             </div>
             <div className="border p-4 rounded-lg">
-              <image src="/p4.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
+              <Image src="/p4.png" alt="Related Product"   height={224} // Specify height
+                            className="w-full h-[400px] object-cover" className="w-full h-auto rounded-t-lg" />
               <h4 className="mt-2 font-semibold">Web Design Fashion</h4>
               <p>$130</p>
               <p>⭐⭐⭐⭐⭐</p>
