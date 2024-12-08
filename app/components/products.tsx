@@ -18,6 +18,8 @@ const Products = () => {
         <Image
           src={product.Image}
           alt="Product Image"
+                          width={500}  // Specify width
+    height={224} // Specify height
           className="h-32 mx-auto mb-4"
         />
         <h3 className="font-medium">{product.name}</h3>
@@ -59,6 +61,8 @@ const Products = () => {
             <Image
               src="/chair.png"
               alt="Discount Chair"
+                              width={500}  // Specify width
+    height={224} // Specify height
               className="h-64 rounded-lg shadow-lg"
             />
           </div>
@@ -83,6 +87,8 @@ const Products = () => {
         <Image
           src={category.Image}
           alt={category.title}
+                          width={500}  // Specify width
+    height={224} // Specify height
           className="h-80 mb-4"
         />
         <h3 className="font-medium">{category.title}</h3>
@@ -128,6 +134,8 @@ const Products = () => {
         <Image
           src={blog.Image}
           alt="Blog Post"
+                          width={500}  // Specify width
+    height={224} // Specify height
           className="h-80 w-full object-cover rounded-lg mb-4"
         />
         <h3 className="font-medium text-lg mb-2">{blog.title}</h3>
