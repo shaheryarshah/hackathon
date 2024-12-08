@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 // components/ShoppingCart.js
 const ShoppingCart = () => {
     return (
