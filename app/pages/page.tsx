@@ -25,7 +25,7 @@ const GridDefault = () => {
                 {/* Map over the items array */}
                 {items.map((item, index) => (
                     <div key={index} className="bg-gray-200 h-[600px] flex flex-col justify-between rounded-lg overflow-hidden shadow-lg">
-                        <img 
+                        <image 
                             src={item.imgSrc} 
                             alt={item.title} 
                             className="w-full h-[400px] object-cover"
