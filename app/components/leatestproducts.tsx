@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from "next/link";
 export default function Leatestproducts() {
   return (
@@ -26,7 +27,7 @@ export default function Leatestproducts() {
       <div className="flex flex-wrap -m-4 gap-[190px]   ">
         <div className="p-4 lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp1.png"
@@ -88,7 +89,7 @@ export default function Leatestproducts() {
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp2.png"
@@ -147,7 +148,7 @@ export default function Leatestproducts() {
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp3.png"
@@ -225,7 +226,7 @@ export default function Leatestproducts() {
       <div className="flex flex-wrap -m-4 gap-[190px]   ">
         <div className="p-4 lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp4.png"
@@ -287,7 +288,7 @@ export default function Leatestproducts() {
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp5.png"
@@ -346,7 +347,7 @@ export default function Leatestproducts() {
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full flex flex-col items-center text-center">
-            <image
+            <Image
               alt="team"
               className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp6.png"
