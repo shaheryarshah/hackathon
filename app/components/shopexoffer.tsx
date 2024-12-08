@@ -13,16 +13,18 @@ export default function Shopex() {
         <h2 className="text-3xl font-bold text-gray-800 mb-10">What Shopex Offer!</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
           {[
-            { image: '/s1.png', title: '24/7 Support', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.' },
-            { image: '/s2.png', title: 'Free Shipping', description: 'We offer free shipping worldwide on all orders above $50.' },
-            { image: '/s3.png', title: 'Easy Returns', description: 'Hassle-free returns within 30 days of purchase.' },
-            { image: '/s4.png', title: 'Secure Payments', description: 'Our payments are highly secured, protecting your privacy and details.' }
+            { Image: '/s1.png', title: '24/7 Support', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.' },
+            { Image: '/s2.png', title: 'Free Shipping', description: 'We offer free shipping worldwide on all orders above $50.' },
+            { Image: '/s3.png', title: 'Easy Returns', description: 'Hassle-free returns within 30 days of purchase.' },
+            { Image: '/s4.png', title: 'Secure Payments', description: 'Our payments are highly secured, protecting your privacy and details.' }
           ].map((offer, index) => (
             <div key={index} className="bg-white shadow-md p-6 rounded-lg">
               <div className="mb-4">
-                <image
-                  src={offer.image}
+                <Image
+                  src={offer.Image}
                   alt={offer.title}
+                                  width={500}  // Specify width
+    height={224} // Specify height
                   className="mx-auto h-12 w-12"
                 />
               </div>
@@ -40,9 +42,11 @@ export default function Shopex() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center">
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <image
+            <Image
               src="/sofa.png"
               alt="Sofa"
+                              width={500}  // Specify width
+    height={224} // Specify height
               className="w-full max-w-sm mx-auto rounded-md shadow-md"
             />
           </div>
