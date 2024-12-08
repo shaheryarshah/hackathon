@@ -38,7 +38,7 @@ const ShopList = () => {
                     <li key={index} className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-4 rounded-md">
                         {/* Image */}
                         <div className="w-full md:w-1/3 mb-4 md:mb-0">
-                            <img
+                            <image
                                 src={product.image} // Using the image from the products array
                                 alt={product.name}
                                 className="w-[250px] h-[250px] object-cover rounded-md"
