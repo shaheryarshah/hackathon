@@ -1,4 +1,5 @@
-npm install @radix-ui/react-slot
+npm install @radix-ui/react-slot@latest
+
 
 {
   "name": "my-project",
