@@ -45,7 +45,8 @@ export default function ProductDetails() {
           <h3 className="text-xl font-bold">Related Products</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="border p-4 rounded-lg">
-              <image src="/p2.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
+              <Image src="/p2.png" alt="Related Product"   height={224} // Specify height
+                            className="w-full h-[400px] object-cover" className="w-full h-auto rounded-t-lg" />
               <h4 className="mt-2 font-semibold">Mens Fashion Wear</h4>
               <p>$120</p>
               <p>⭐⭐⭐⭐⭐</p>
