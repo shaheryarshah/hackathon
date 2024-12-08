@@ -1,19 +1,19 @@
 {
-  "name": "my-app",
+  "name": "my-project",
   "version": "1.0.0",
+  "description": "A description of your app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build"
+  },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
-  {
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.5.0"
-  }
-}
-
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  }
+  "author": "Your Name",
+  "license": "MIT"
 }
