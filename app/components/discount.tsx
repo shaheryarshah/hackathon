@@ -3,7 +3,7 @@ import React from 'react';
 
 const Promotion = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-center md:justify-between p-4 space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between p-4 space-y-4 md:space-y-0 container px-5 mx-auto">
             {/* Left Section */}
             <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center w-full md:w-1/2">
                 <h2 className="text-lg font-bold mb-2">23% off in all products</h2>

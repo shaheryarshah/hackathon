@@ -1,46 +1,83 @@
-// components/GridDefault.js
-import React from 'react';
+// pages/shop-grid.js
 
-const GridDefault = () => {
-    // Mock data for images and titles (could be fetched from an API)
-    const items = [
-        { imgSrc: '/g1.png', title: 'Head phone' },
-        { imgSrc: '/g2.png', title: 'Sofa' },
-        { imgSrc: '/g3.png', title: 'Camera' },
-        { imgSrc: '/g4.png', title: 'Smart Sofa' },
-        { imgSrc: '/g5.png', title: 'Chair' },
-        { imgSrc: '/g6.png', title: 'chair 2' },
-        { imgSrc: '/g7.png', title: 'Watch' },
-        { imgSrc: '/g8.png', title: 'Bag' },
-        { imgSrc: '/tp4.png', title: 'Smart chair' },
-        { imgSrc: '/tp3.png', title: 'Stylish Chair' },
-        { imgSrc: '/g11.png', title: 'Android Watch' },
-        { imgSrc: '/tp2.png', title: 'Red Chair' },
-    ];
+import Image from 'next/image';
 
-    return (
-        <div className="p-4">
-            <h2 className="text-xl font-semibold mb-4">Ecommerce Accessories & Fashion Items</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                {/* Map over the items array */}
-                {items.map((item, index) => (
-                    <div key={index} className="bg-gray-200 h-[600px] flex flex-col justify-between rounded-lg overflow-hidden shadow-lg">
-                        <img 
-                            src={item.imgSrc} 
-                            alt={item.title} 
-                            className="w-full h-[400px] object-cover"
-                        />
-                        <div className="p-2 flex flex-col justify-between h-full">
-                            <span className="text-lg font-semibold text-center">{item.title}</span>
-                            <button className="mt-2 py-1 px-4 bg-blue-500 text-white rounded-md w-full">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+export default function ShopGrid() {
+  const products = [
+    { id: 1, name: "Vel elit ex lorem", price: "$55.00", oldPrice: "$60.00", image: "/g1.png" },
+    { id: 2, name: "Ultrices condimentum imperdiet", price: "$70.00", oldPrice: "$80.00", image: "/g2.png" },
+    { id: 3, name: "Vitae suspendisse sed", price: "$90.00", oldPrice: "$100.00", image: "/g3.png" },
+    { id: 4, name: "Sed at fermentum", price: "$75.00", oldPrice: "$90.00", image: "/g4.png" },
+    { id: 5, name: "Faucibus pellentesque et", price: "$35.00", oldPrice: "$40.00", image: "/g5.png" },
+    { id: 6, name: "Vestibulum magna laoreet", price: "$55.00", oldPrice: "$60.00", image: "/g6.png" },
+    { id: 7, name: "Sollicitudin amet eni", price: "$95.00", oldPrice: "$120.00", image: "/g7.png" },
+    { id: 8, name: "Ultrices mauris eu", price: "$120.00", oldPrice: "$140.00", image: "/g8.png" },
+    { id: 9, name: "Pellentesque condimentum ac", price: "$45.00", oldPrice: "$50.00", image: "/g9.png" },
+    { id: 10, name: "Cras sollicitudin velit", price: "$80.00", oldPrice: "$100.00", image: "/g10.png" },
+    { id: 11, name: "Lectus vulputate faucibus", price: "$60.00", oldPrice: "$75.00", image: "/g11.png" },
+    { id: 12, name: "Purus risus ut", price: "$65.00", oldPrice: "$80.00", image: "/lp1.png" },
+  ];
+
+  return (
+    <div className="p-4 md:p-8 container px-5 mx-auto">
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold">Shop Grid Default</h1>
+        <p className="text-sm text-gray-500">Home / Pages / Shop Grid Default</p>
+      </div>
+
+      <div className="border-t border-b py-4 flex flex-wrap justify-between items-center text-sm">
+        <h2 className="font-semibold text-lg">Ecommerce Accessories & Fashion Item</h2>
+        <div className="flex items-center space-x-4">
+          <div>
+            <label htmlFor="perPage" className="mr-2">Per Page</label>
+            <select id="perPage" className="border rounded px-2 py-1">
+              <option>12</option>
+              <option>24</option>
+              <option>36</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="sortBy" className="mr-2">Sort By</label>
+            <select id="sortBy" className="border rounded px-2 py-1">
+              <option>Default</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="view" className="mr-2">View</label>
+            <select id="view" className="border rounded px-2 py-1">
+              <option>Grid</option>
+              <option>List</option>
+            </select>
+          </div>
         </div>
-    );
-};
+      </div>
 
-export default GridDefault;
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        {products.map((product) => (
+          <div key={product.id} className="border p-4 rounded-md text-center">
+            <div className="relative w-full h-48">
+              <Image
+                src={product.image}
+                alt={product.name}
+                layout="fill"
+                objectFit="contain"
+                className="rounded-md"
+              />
+            </div>
+            <h3 className="mt-4 font-medium text-gray-700">{product.name}</h3>
+            <div className="flex justify-center space-x-2 mt-2">
+              <span className="text-red-500 font-bold">{product.price}</span>
+              <span className="line-through text-gray-400">{product.oldPrice}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <footer className="text-center mt-8 text-sm text-gray-500">
+        <p>&copy; 2024 Ecommerce. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}

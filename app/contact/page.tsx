@@ -1,83 +1,125 @@
-// components/ContactUs.js
-const ContactUs = () => {
-    return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
+'use client';
 
-            <div className="flex flex-col lg:flex-row justify-between mb-8">
-                {/* Information About Us */}
-                <div className="bg-white shadow-md rounded-lg p-6 mb-4 lg:mb-0 lg:w-1/2">
-                    <h2 className="text-xl font-semibold mb-4">Information About Us</h2>
-                    <p>
-                        We provide exceptional services to meet your needs. Our dedicated team is 
-                        always available for your questions and support.
-                    </p>
-                </div>
+import Image from "next/image";
 
-                {/* Contact Way */}
-                <div className="bg-white shadow-md rounded-lg p-6 lg:w-1/2">
-                    <h2 className="text-xl font-semibold mb-4">Contact Way</h2>
-                    <ul className="space-y-3">
-                        <li className="flex items-center">
-                            <span className="text-blue-500 mr-2">📞</span>
-                            <span>Phone: +123 456 7890</span>
-                        </li>
-                        <li className="flex items-center">
-                            <span className="text-green-500 mr-2">📧</span>
-                            <span>Email: info@example.com</span>
-                        </li>
-                        <li className="flex items-center">
-                            <span className="text-red-500 mr-2">🌐</span>
-                            <span>Website: www.example.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            {/* Get In Touch Form */}
-            <div className="bg-white shadow-md rounded-lg p-6">
-                <h2 className="text-xl font-semibold mb-4">Get In Touch</h2>
-                <form>
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium mb-2" htmlFor="name">Name</label>
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            className="w-full p-2 border border-gray-300 rounded" 
-                            placeholder="Your Name" 
-                            required 
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium mb-2" htmlFor="email">Email</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            className="w-full p-2 border border-gray-300 rounded" 
-                            placeholder="Your Email" 
-                            required 
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium mb-2" htmlFor="message">Message</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            className="w-full p-2 border border-gray-300 rounded" 
-                            rows="4" 
-                            placeholder="Your Message" 
-                            required 
-                        ></textarea>
-                    </div>
-                    <button className="bg-pink-500 text-white px-4 py-2 rounded">
-                        Send Message
-                    </button>
-                </form>
-            </div>
+function ContactUs() {
+  return (
+    <>
+   
+    <div className="w-full bg-gray-50">
+      {/* Header Section */}
+      <div className="bg-gray-200 py-8">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <h1 className="text-3xl font-bold text-[#101750] mb-2">Contact Us</h1>
+          <p className="text-sm text-black">
+            Home <span className="text-black">.</span> Pages <span className="text-black">.</span>{" "}
+            <span className="text-[#FB2E86]">Contact Us</span>
+          </p>
         </div>
-    );
-};
+      </div>
+
+      {/* Main Content Section */}
+      <div className="max-w-[1200px] mx-auto px-4 py-12 flex flex-wrap gap-12">
+        {/* Left Section */}
+        <div className="flex-1">
+          {/* Information About Us */}
+          <h2 className="text-2xl font-bold text-[#151875] mb-4">Information About Us</h2>
+          <p className="text-gray-600 mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis
+            aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor
+            lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
+          </p>
+          <div className="flex gap-2 mb-8">
+            <span className="w-3 h-3 rounded-full bg-[#5625DF]"></span>
+            <span className="w-3 h-3 rounded-full bg-[#FF27B7]"></span>
+            <span className="w-3 h-3 rounded-full bg-[#37DAF3]"></span>
+          </div>
+
+          {/* Get in Touch */}
+          <h2 className="text-2xl font-bold text-[#151875] mb-4">Get in Touch</h2>
+          <p className="text-gray-600 mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices tristique
+            amet erat vitae eget dolor los vitae lobortis quis bibendum quam.
+          </p>
+          <form className="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name*"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none text-sm"
+            />
+            <input
+              type="email"
+              placeholder="Your E-mail*"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none text-sm"
+            />
+            <input
+              type="text"
+              placeholder="Subject*"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none text-sm"
+            />
+            <textarea
+              placeholder="Type your message*"
+              rows={4}
+              className="w-full border border-gray-300 rounded-md p-3 outline-none text-sm"
+            ></textarea>
+            <button className="bg-[#FB2E86] text-white py-3 px-8 rounded-md hover:bg-[#F94C9B] transition-colors">
+              Send Mail
+            </button>
+          </form>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex-1">
+          {/* Contact Way */}
+          <h2 className="text-2xl font-bold text-[#151875] mb-8">Contact Way</h2>
+
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <span className="w-3 h-3 rounded-full bg-[#5726DF]"></span>
+              <div className="text-gray-600">
+                <p>Tel: 877-67-88-99</p>
+                <p>E-Mail: shop@store.com</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="w-3 h-3 rounded-full bg-[#FB2E86]"></span>
+              <div className="text-gray-600">
+                <p>Support Forum</p>
+                <p>For over 24hr</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="w-3 h-3 rounded-full bg-[#FFB265]"></span>
+              <div className="text-gray-600">
+                <p>20 Margaret st, London</p>
+                <p>Great Britain, 3NM98-LK</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="w-3 h-3 rounded-full bg-[#1BE982]"></span>
+              <div className="text-gray-600">
+                <p>Free standard shipping</p>
+                <p>on all orders</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+      <Image
+        src="/connect.png" // Reference the image using its path in the public folder
+        alt="Connect"
+        width={500} // Adjust the width as needed
+        height={500} // Adjust the height as needed
+      />
+    </div>    
+     </div>
+      </div>
+    </div>
+     
+    </>
+  
+  );
+}
 
 export default ContactUs;

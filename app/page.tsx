@@ -14,8 +14,9 @@ export default function Home (){
     <Featuredproducts/>
         <Leatestproducts/>
   <Shopex/>
+  <Promotion/>
     <Products/>
-    <Promotion/>
+    
     
     </div>
   )

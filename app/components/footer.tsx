@@ -7,7 +7,7 @@ import Link from "next/link"
 function Footer() {
   return (
     <div>
-        <footer className="text-gray-600 body-font bg-[#E7E4F8]">
+        <footer className="text-gray-600 body-font bg-[#E7E4F8] container px-5 mx-auto">
   <div className="container px-5 py-24 mx-auto mt-[40px]">
     <div className="flex flex-wrap md:text-left text-center order-first">
 
@@ -32,7 +32,7 @@ function Footer() {
             />
           </div>
           <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
-            Sign-Up
+            <Link href="/signup">Signup</Link>
           </button>
         </div>
         <p className="text-gray-500 text-sm mt-2 md:text-left text-center">

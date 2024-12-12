@@ -3,7 +3,7 @@ import React from "react";
 
 const Products = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 container px-5 mx-auto">
     {/* Trending Products Section */}
 <section className="py-16 px-4">
   <h2 className="text-3xl font-bold text-center mb-8">Trending Products</h2>
@@ -66,11 +66,11 @@ const Products = () => {
       </section>
 
       {/* Top Categories Section */}
-<section className="py-16 px-4">
+<section className="py-16 px-4 ">
   <h2 className="text-3xl font-bold text-center mb-8">Top Categories</h2>
-  <div className="flex justify-center space-x-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {[
-      { img: "/tc1.png", title: "Mini LCW Chair", price: "$300" },
+      { img:  "/tc1.png", title: "Mini LCW Chair", price: "$300"   },
       { img: "/tc2.png", title: "Modern Sofa", price: "$500" },
       { img: "/tc3.png", title: "Office Desk", price: "$200" },
       { img: "/tc4.png", title: "Wooden Coffee Table", price: "$150" },
@@ -78,7 +78,7 @@ const Products = () => {
     ].map((category, idx) => (
       <div
         key={idx}
-        className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md"
+        className="flex flex-col border-2 m-4 items-center rounded-lg bg-slate-200 shadow-lg"
       >
         <img
           src={category.img}

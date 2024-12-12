@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <div>
-            <div className="flex flex-col lg:flex-row items-center justify-center bg-purple-100 h-auto lg:h-[600px] w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-center bg-purple-100 h-auto lg:h-[600px] container px-5 mx-auto">
                 {/* Hero Image */}
                 <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0">
                     <Image
@@ -16,10 +16,10 @@ export default function Hero() {
                 </div>
 
                 {/* Hero Text Section */}
-                <section className="bg-purple-100 px-4 py-8 lg:px-8 lg:py-12 lg:w-1/2 flex justify-center lg:justify-start">
+                <section className="bg-purple-100 px-4 py-8 lg:px-8 lg:py-12 lg:w-1/2 flex justify-center lg:justify-center">
                     <div className="text-center lg:text-start max-w-lg">
                         <p className="text-pink-600 text-lg">Best Furniture For Your Castle...</p>
-                        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mt-4 mb-4">
+                        <h2 className="md:text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mt-4 mb-4">
                             New Furniture Collection <br /> Trends in 2020
                         </h2>
                         <p className="text-gray-700 text-base sm:text-lg lg:text-xl mb-6">

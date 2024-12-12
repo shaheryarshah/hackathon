@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex flex-col md:flex-row w-full h-auto md:h-[44px] bg-purple-600 px-4 md:px-0 ">
+    <div className="flex flex-col md:flex-row w-auto h-auto md:h-[44px] bg-purple-600 px-4 md:px-0 container px-5 mx-auto ">
       {/* Left Section */}
-      <div className="flex flex-col md:flex-row gap-2 md:gap-[100px] md:ml-[200px] w-full md:w-2/4 items-center text-white">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-[10px] md:ml-[10px] w-full md:w-4/4 items-center text-white">
         <a className="flex items-center gap-2 text-sm md:text-base">
           <CiMail />
           mhhasanul@gmail.com

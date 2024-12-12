@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex flex-row gap-[50px] mx-[190px]">
         <p className="flex flex-row text-bold text-2xl items-center">Hekto</p>
         <div className="flex flex-row gap-[10px]">
-        <Link className="flex items-center" href="http://localhost:3000/">
+        <Link className="flex items-center" href="https://hackthon-001.netlify.app/">
         Home
         </Link>
           <Link className="flex items-center" href="/pages">

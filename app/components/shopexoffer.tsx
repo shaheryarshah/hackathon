@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function Shopex() {
   return (
-    <div className="bg-white">
+    <div className="bg-white container px-5 mx-auto">
       <Head>
         <title>ShopEx Offer</title>
       </Head>

@@ -1,23 +1,23 @@
 import Head from 'next/head';
 
-const Login = () => {
+const Forgotpassword = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Head>
-        <title>My Account - Login</title>
+        <title>Create Password</title>
       </Head>
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center">Login</h2>
+        <h2 className="text-2xl font-bold text-center">Create a New Password</h2>
         <p className="text-sm text-center text-gray-500">
-          Please log in using your email address.
+        Password legnth minimum required 8 correctors.
         </p>
         <form className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700" htmlFor="email">
-              Email Address
+              Enter Your Password
             </label>
             <input
-              type="email"
+              type="password"
               id="email"
               required
               className="block w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500"
@@ -25,7 +25,7 @@ const Login = () => {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700" htmlFor="password">
-              Password
+              Confirm Password
             </label>
             <input
               type="password"
@@ -36,12 +36,12 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full py-2 mt-4 text-white bg-pink-500 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+            className="w-full py-2 mt-4 text-white bg-green-500 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
           >
-            Sign In
+            Confirm
           </button>
           <p className="text-sm text-center text-gray-500">
-            <a href="/forgotpassword" className="text-pink-500 hover:underline">
+            <a href="#" className="text-pink-500 hover:underline">
               Forgot your password?
             </a>
           </p>
@@ -57,4 +57,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Forgotpassword;

@@ -31,13 +31,13 @@ const products = [
 
 const ShopList = () => {
     return (
-        <div className="p-4">
+        <div className="p-4 container px-5 mx-auto">
             <h2 className="text-xl font-semibold mb-4">Shop List</h2>
-            <ul className="space-y-4">
+            <ul className="space-y-4 ">
                 {products.map((product, index) => (
-                    <li key={index} className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-4 rounded-md">
+                    <li key={index} className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-4 border-2 border-black rounded-md w-[800px]">
                         {/* Image */}
-                        <div className="w-full md:w-1/3 mb-4 md:mb-0">
+                        <div className="w-full md:w-2/3 mb-4 md:mb-0">
                             <img
                                 src={product.image} // Using the image from the products array
                                 alt={product.name}

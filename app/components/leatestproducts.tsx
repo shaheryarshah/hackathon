@@ -1,14 +1,14 @@
 import Link from "next/link";
 export default function Leatestproducts() {
   return (
-    <div>
+    <div className="">
 
-    <div>
-      <h1 className="text-4xl font-bold text-center items-center">
+    <div className="">
+      <h1 className="text-4xl font-bold text-center items-center ">
         Leatest Products
       </h1>
       <div>
-        <span className="flex justify-center gap-[30px] mt-[30px] text-semibold">
+        <span className="flex justify-center sm:flex-col gap-[30px] mt-[30px] text-semibold">
           <Link href="">New Arrival</Link>
           <Link href="">Best Seller</Link>
           <Link href="">Featured</Link>
@@ -21,14 +21,14 @@ export default function Leatestproducts() {
 <div>
         <>
    <section className="text-gray-600 body-font ">
-    <div className="container px-5 py-24 mx-auto ">
+    <div className="flex-col flex container px-5 py-24 mx-auto  ">
     
-      <div className="flex flex-wrap -m-4 gap-[190px]   ">
-        <div className="p-4 lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+      <div className="flex items-center justify-center ">
+        <div className="p-4  lg:w-1/4 md:w-1/2 ">
+          <div className="h-full shadow-lg items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp1.png"
             />
             <div className="w-full">
@@ -87,11 +87,11 @@ export default function Leatestproducts() {
           </div>
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+          <div className="h-full shadow-lg  flex flex-col items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
-              src="/lp2.png"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              src="/lp4.png"
             />
             <div className="w-full">
               <h2 className="title-font font-medium text-lg text-gray-900">
@@ -146,10 +146,10 @@ export default function Leatestproducts() {
           </div>
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+          <div className="h-full shadow-lg flex flex-col items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp3.png"
             />
             <div className="w-full">
@@ -222,12 +222,12 @@ export default function Leatestproducts() {
    <section className="text-gray-600 body-font ">
     <div className="container px-5 py-24 mx-auto ">
     
-      <div className="flex flex-wrap -m-4 gap-[190px]   ">
-        <div className="p-4 lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+      <div className="flex container mx-auto mx-12 items-center justify-center">
+        <div className="p-4 lg:w-1/4 md:w-1/4">
+          <div className="h-full shadow-lg flex flex-col items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp4.png"
             />
             <div className="w-full">
@@ -285,11 +285,11 @@ export default function Leatestproducts() {
             </div>
           </div>
         </div>
-        <div className="p-4  lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+        <div className="lg:w-3/12">
+          <div className="flex shadow-lg flex-col items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp5.png"
             />
             <div className="w-full">
@@ -344,11 +344,11 @@ export default function Leatestproducts() {
             </div>
           </div>
         </div>
-        <div className="p-4  lg:w-1/4 md:w-1/2">
-          <div className="h-full flex flex-col items-center text-center">
+        <div className="p-4  lg:w-4/12">
+          <div className="h-full flex shadow-lg flex-col items-center text-center">
             <img
               alt="team"
-              className="flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
+              className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-100 object-cover object-center mb-4"
               src="/lp6.png"
             />
             <div className="w-full">
