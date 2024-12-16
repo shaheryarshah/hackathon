@@ -12,7 +12,7 @@ type Blog = {
   date: string;
   category: string;
   excerpt: string;
-  image: string;
+  Image: string;
 };
 
 
@@ -24,7 +24,7 @@ const blogs: Blog[] = [
     date: "December 9, 2024",
     category: "Design",
     excerpt: "This is a brief excerpt from the blog post.",
-    image: "/blog1.png", 
+    Image: "/blog1.png", 
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const blogs: Blog[] = [
     date: "December 8, 2024",
     category: "Technology",
     excerpt: "This is another brief excerpt from the second blog post.",
-    image: "/blog2.png", 
+    Image: "/blog2.png", 
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const blogs: Blog[] = [
     date: "December 7, 2024",
     category: "Travel",
     excerpt: "An excerpt from the third blog post about travel.",
-    image: "/blog3.png", 
+    Image: "/blog3.png", 
   },
 ];
 
@@ -66,7 +66,7 @@ const BlogPage = () => {
           {blogs.map((blog) => (
             <div>
               <Image
-                src={blog.image}
+                src={blog.Image}
                 alt={blog.title}
                 width={870}
                 height={453}
@@ -120,13 +120,13 @@ const BlogPage = () => {
             <h3 className="text-lg font-bold text-[#001F54] mb-2">Recent Posts</h3> {/* Dark blue */}
             <ul className="space-y-2">
               {[
-                { id: 4, image: "/blog4m.png", title: "Recent Blog 1", date: "December 6, 2024" },
-                { id: 5, image: "/blog5m.png", title: "Recent Blog 2", date: "December 5, 2024" },
-                { id: 6, image: "/blog6m.png", title: "Recent Blog 3", date: "December 4, 2024" },
+                { id: 4, Image: "/blog4m.png", title: "Recent Blog 1", date: "December 6, 2024" },
+                { id: 5, Image: "/blog5m.png", title: "Recent Blog 2", date: "December 5, 2024" },
+                { id: 6, Image: "/blog6m.png", title: "Recent Blog 3", date: "December 4, 2024" },
               ].map((blog) => (
                 <li key={blog.id} className="flex items-center space-x-4">
                   <Image
-                    src={blog.image}
+                    src={blog.Image}
                     alt={blog.title}
                     width={500}
                     height={500}
