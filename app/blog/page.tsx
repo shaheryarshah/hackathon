@@ -51,7 +51,7 @@ const BlogPage = () => {
       <div className="py-16 ml-8 lg:ml-56 container mx-auto space-y-2">
         <h1 className="text-4xl font-bold text-[#001F54]">Blog</h1> {/* Dark blue */}
         <div className="flex items-center gap-2">
-          <Link href={"https://github.com/shaheryarshah/hackathon.git"}>Home</Link>
+          <Link href="https://github.com/shaheryarshah/hackathon.git">Home</Link>
           <span className="text-black mx-2">.</span>
           <span className="text-[#FB2E86]">Latest Blogs</span>
         </div>
@@ -62,7 +62,7 @@ const BlogPage = () => {
         {/* Blog Posts Section */}
         <div className="lg:w-1/2">
           {blogs.map((blog) => (
-            <div key={blog.id}> {/* Added key here */}
+            <div key={blog.id}>
               <Image
                 src={blog.Image}
                 alt={blog.title}
@@ -131,7 +131,9 @@ const BlogPage = () => {
                     className="w-16 h-16 object-cover rounded-md"
                   />
                   <div>
-                    <h4 className="text-sm font-semibold text-[#001F54]">{blog.title}</h4>
+                    <h4 className="text-sm font-semibold text-[#001F54]">
+                      {blog.title}
+                    </h4>
                     <p className="text-sm text-gray-500">{blog.date}</p>
                   </div>
                 </li>
@@ -146,7 +148,7 @@ const BlogPage = () => {
               {["Design", "Technology", "Travel", "Fashion", "Food"].map(
                 (tag, index) => (
                   <span
-                    key={index} {/* Added key here */}
+                    key={index}
                     className="px-3 py-1 bg-gray-200 text-sm text-gray-600 rounded-full"
                   >
                     {tag}
