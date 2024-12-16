@@ -4,18 +4,18 @@ import Image from 'next/image';
 
 export default function ShopGrid() {
   const products = [
-    { id: 1, name: "Vel elit ex lorem", price: "$55.00", oldPrice: "$60.00", image: "/g1.png" },
-    { id: 2, name: "Ultrices condimentum imperdiet", price: "$70.00", oldPrice: "$80.00", image: "/g2.png" },
-    { id: 3, name: "Vitae suspendisse sed", price: "$90.00", oldPrice: "$100.00", image: "/g3.png" },
-    { id: 4, name: "Sed at fermentum", price: "$75.00", oldPrice: "$90.00", image: "/g4.png" },
-    { id: 5, name: "Faucibus pellentesque et", price: "$35.00", oldPrice: "$40.00", image: "/g5.png" },
-    { id: 6, name: "Vestibulum magna laoreet", price: "$55.00", oldPrice: "$60.00", image: "/g6.png" },
-    { id: 7, name: "Sollicitudin amet eni", price: "$95.00", oldPrice: "$120.00", image: "/g7.png" },
-    { id: 8, name: "Ultrices mauris eu", price: "$120.00", oldPrice: "$140.00", image: "/g8.png" },
-    { id: 9, name: "Pellentesque condimentum ac", price: "$45.00", oldPrice: "$50.00", image: "/g9.png" },
-    { id: 10, name: "Cras sollicitudin velit", price: "$80.00", oldPrice: "$100.00", image: "/g10.png" },
-    { id: 11, name: "Lectus vulputate faucibus", price: "$60.00", oldPrice: "$75.00", image: "/g11.png" },
-    { id: 12, name: "Purus risus ut", price: "$65.00", oldPrice: "$80.00", image: "/lp1.png" },
+    { id: 1, name: "Vel elit ex lorem", price: "$55.00", oldPrice: "$60.00", Image: "/g1.png" },
+    { id: 2, name: "Ultrices condimentum imperdiet", price: "$70.00", oldPrice: "$80.00", Image: "/g2.png" },
+    { id: 3, name: "Vitae suspendisse sed", price: "$90.00", oldPrice: "$100.00", Image: "/g3.png" },
+    { id: 4, name: "Sed at fermentum", price: "$75.00", oldPrice: "$90.00", Image: "/g4.png" },
+    { id: 5, name: "Faucibus pellentesque et", price: "$35.00", oldPrice: "$40.00", Image: "/g5.png" },
+    { id: 6, name: "Vestibulum magna laoreet", price: "$55.00", oldPrice: "$60.00", Image: "/g6.png" },
+    { id: 7, name: "Sollicitudin amet eni", price: "$95.00", oldPrice: "$120.00", Image: "/g7.png" },
+    { id: 8, name: "Ultrices mauris eu", price: "$120.00", oldPrice: "$140.00", Image: "/g8.png" },
+    { id: 9, name: "Pellentesque condimentum ac", price: "$45.00", oldPrice: "$50.00", Image: "/g9.png" },
+    { id: 10, name: "Cras sollicitudin velit", price: "$80.00", oldPrice: "$100.00", Image: "/g10.png" },
+    { id: 11, name: "Lectus vulputate faucibus", price: "$60.00", oldPrice: "$75.00", Image: "/g11.png" },
+    { id: 12, name: "Purus risus ut", price: "$65.00", oldPrice: "$80.00", Image: "/lp1.png" },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function ShopGrid() {
           <div key={product.id} className="border p-4 rounded-md text-center">
             <div className="relative w-full h-48">
               <Image
-                src={product.image}
+                src={product.Image}
                 alt={product.name}
                 layout="fill"
                 objectFit="contain"
