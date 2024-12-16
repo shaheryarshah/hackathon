@@ -50,7 +50,7 @@ const BlogPage = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="py-16 ml-8 lg:ml-36 space-y-2">
+      <div className="py-16 ml-8 lg:ml-56 container mx-auto space-y-2">
         <h1 className="text-4xl font-bold text-[#001F54]">Blog</h1> {/* Dark blue */}
         <div className="flex items-center gap-2">
           <Link href={"https://github.com/shaheryarshah/hackathon.git"}>Home</Link>

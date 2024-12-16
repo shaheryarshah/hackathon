@@ -8,7 +8,7 @@ export default function Leatestproducts() {
         Leatest Products
       </h1>
       <div>
-        <span className="flex justify-center sm:flex-col gap-[30px] mt-[30px] text-semibold">
+        <span className="flex justify-center flex-row text-sm  sm:flex-row  gap-[10px] mt-[30px] text-semibold">
           <Link href="">New Arrival</Link>
           <Link href="">Best Seller</Link>
           <Link href="">Featured</Link>
@@ -23,8 +23,8 @@ export default function Leatestproducts() {
    <section className="text-gray-600 body-font ">
     <div className="flex-col flex container px-5 py-24 mx-auto  ">
     
-      <div className="flex items-center justify-center ">
-        <div className="p-4  lg:w-1/4 md:w-1/2 ">
+      <div className="flex flex-col sm:flex-row items-center justify-center ">
+        <div className=" p-4  lg:w-1/4 md:w-1/2 ">
           <div className="h-full shadow-lg items-center text-center">
             <img
               alt="team"
@@ -222,7 +222,7 @@ export default function Leatestproducts() {
    <section className="text-gray-600 body-font ">
     <div className="container px-5 py-24 mx-auto ">
     
-      <div className="flex container mx-auto mx-12 items-center justify-center">
+      <div className="flex flex-col sm:flex-row container mx-auto mx-12 items-center justify-center">
         <div className="p-4 lg:w-1/4 md:w-1/4">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
             <img

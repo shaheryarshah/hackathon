@@ -94,11 +94,12 @@ const Products = () => {
 
 
       {/* Newsletter Section */}
+      
+      
       <section className="py-16 px-4 bg-white">
-       
-        <div className="max-w-4xl mx-auto text-center">
-
-          <h2 className="text-3xl font-bold mb-4">Get Latest Updates By Subscribing</h2>
+      <div><Image src="/sn.png" alt="Loading" height={500} width={1440}></Image>
+      <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-4">Get Latest Updates By Subscribing</h2>
           <p className="text-gray-500 mb-6">
             Stay updated with the latest trends and exclusive discounts.
           </p>
@@ -112,8 +113,10 @@ const Products = () => {
               Subscribe
             </button>
           </div>
-        </div>
-      </section>
+           </div></div>
+             </section>
+             
+      
 
       {/* Latest Blog Section */}
       <section className="py-16 px-4">

@@ -1,5 +1,6 @@
 // components/Promotion.js
 import React from 'react';
+import Image from 'next/image';
 
 const Promotion = () => {
     return (
@@ -7,17 +8,16 @@ const Promotion = () => {
             {/* Left Section */}
             <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center w-full md:w-1/2">
                 <h2 className="text-lg font-bold mb-2">23% off in all products</h2>
-                <img
-                    src="/path-to-your-clock-image.jpg"
-                    alt="Clock"
-                    className="w-24 h-24 mb-4"
-                />
+                <div><Image src="/voucher1.png"  alt="Clock" height={100}  width={150}>
+                </Image></div>
                 <button className="bg-blue-500 text-white px-4 py-2 rounded">Shop Now</button>
             </div>
 
             {/* Right Section */}
             <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center w-full md:w-1/2">
                 <h2 className="text-lg font-bold mb-2">25% off in all products</h2>
+                <div><Image src="/voucher2.png"  alt="Clock" height={100}  width={150}>
+                </Image></div>
                 <button className="bg-blue-500 text-white px-4 py-2 rounded mb-4">
                     View Collection
                 </button>

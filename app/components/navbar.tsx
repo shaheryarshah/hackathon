@@ -2,11 +2,11 @@ import Link from "next/link";
 import { PiMagnifyingGlass } from "react-icons/pi";
 export default function Navbar() {
   return (
-    <div className="flex bg-white flex-row h-[80px] w-full">
-      <div className="flex flex-row gap-[50px] mx-[190px]">
-        <p className="flex flex-row text-bold text-2xl items-center">Hekto</p>
-        <div className="flex flex-row gap-[10px]">
-        <Link className="flex items-center" href="https://hackthon-001.netlify.app/">
+    <div className="container flex bg-white flex-row h-[80px] bg-slate-100 sm:mx-auto ">
+      <div className="flex flex-col sm:flex-row sm:gap-[50px]  justify-center items-center sm:items-center mx-auto sm:mx-[240px]">
+        <p className="flex justify-left sm:text-bold sm:text-2xl text-sm items-center">Hekto</p>
+        <div className="flex  items-center justify-left text-sm sm:flex-row gap-[5px] sm:justify-end sm:gap-[50px]">
+        <Link className="flex items-center" href="/">
         Home
         </Link>
           <Link className="flex items-center" href="/pages">
@@ -25,14 +25,17 @@ export default function Navbar() {
             Contact
           </Link>
         </div>
-        <div className="flex items-center mx-[700px]">
+        <div className="border-2 hidden sm:block sm:flex  ">
           <input
-            className="flex justify-end border-2 border-slate-300 h-[30px] w-[240px]"
+            className=""
             type="text"
+            
           />
-          <span className="flex justify-center h-[30px] w-[40px] items-center bg-pink-500">
-            <PiMagnifyingGlass />
-          </span>
+          <div className="flex justify-center items-center bg-pink-500 h-[30px] w-[40px]">
+         
+          <PiMagnifyingGlass />
+         
+          </div>
         </div>
       </div>
     </div>

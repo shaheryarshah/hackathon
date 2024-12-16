@@ -9,8 +9,8 @@ export default function Featuredproducts (){
           Featured Product
         </h1>
         </div>
-      <div className="flex flex-wrap -m-4">
-        <div className="p-4 lg:w-1/4 md:w-1/2">
+      <div className="flex flex-col sm:flex-row">
+        <div className="p-4 lg:w-1/4 md:w-1/2 items-center">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
             <img
               alt="team"

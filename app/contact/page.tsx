@@ -1,22 +1,25 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 
 
 function ContactUs() {
   return (
-    <>
+    
    
-    <div className="w-full bg-gray-50">
+
+    <div className="container justify-center items-center bg-gray-50 px-5 mx-auto ">
       {/* Header Section */}
-      <div className="bg-gray-200 py-8">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <h1 className="text-3xl font-bold text-[#101750] mb-2">Contact Us</h1>
-          <p className="text-sm text-black">
-            Home <span className="text-black">.</span> Pages <span className="text-black">.</span>{" "}
-            <span className="text-[#FB2E86]">Contact Us</span>
-          </p>
-        </div>
+     
+        
+          <h1 className="text-3xl flex font-bold text-[#101750] mb-2">Contact Us</h1>
+          <div className="flex gap-2 flex-row ">
+          <Link className="" href="/">Home</Link>
+          <Link className="" href="/pages">Pages</Link>
+          
+          
+        
       </div>
 
       {/* Main Content Section */}
@@ -117,7 +120,7 @@ function ContactUs() {
       </div>
     </div>
      
-    </>
+    
   
   );
 }

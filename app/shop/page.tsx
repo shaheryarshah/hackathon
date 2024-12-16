@@ -1,61 +1,100 @@
-// components/ShopList.js
+// pages/index.js
 import React from 'react';
 
 const products = [
-    {
-        name: 'Product 1',
-        price: '$29.99',
-        image: '/g1.png', // Path to the image in the public folder
-    },
-    {
-        name: 'Product 2',
-        price: '$39.99',
-        image: '/g2.png',
-    },
-    {
-        name: 'Product 3',
-        price: '$49.99',
-        image: '/g3.png',
-    },
-    {
-        name: 'Product 4',
-        price: '$59.99',
-        image: '/g4.png',
-    },
-    {
-        name: 'Product 5',
-        price: '$69.99',
-        image: '/g5.png',
-    },
+  {
+    id: 1,
+    name: "Accumsan tincidunt",
+    price: "$25.00",
+    discountedPrice: "$20.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist1.png",
+  },
+  {
+    id: 2,
+    name: "In nulla",
+    price: "$45.00",
+    discountedPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist2.png",
+  },
+  {
+    id: 3,
+    name: "Vel sem",
+    price: "$30.00",
+    discountedPrice: "$25.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist3.png",
+  },
+  {
+    id: 4,
+    name: "Porttitor cum",
+    price: "$60.00",
+    discountedPrice: "$55.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist4.png",
+  },
+  {
+    id: 5,
+    name: "Nunc in",
+    price: "$35.00",
+    discountedPrice: "$30.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist5.png",
+  },
+  {
+    id: 6,
+    name: "Vitae facilisis",
+    price: "$50.00",
+    discountedPrice: "$45.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist6.png",
+  },
+  {
+    id: 7,
+    name: "Curabitur lectus",
+    price: "$20.00",
+    discountedPrice: "$15.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    image: "/shoplist7.png",
+  },
 ];
 
-const ShopList = () => {
-    return (
-        <div className="p-4 container px-5 mx-auto">
-            <h2 className="text-xl font-semibold mb-4">Shop List</h2>
-            <ul className="space-y-4 ">
-                {products.map((product, index) => (
-                    <li key={index} className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-4 border-2 border-black rounded-md w-[800px]">
-                        {/* Image */}
-                        <div className="w-full md:w-2/3 mb-4 md:mb-0">
-                            <img
-                                src={product.image} // Using the image from the products array
-                                alt={product.name}
-                                className="w-[250px] h-[250px] object-cover rounded-md"
-                            />
-                        </div>
-                        
-                        {/* Product Name and Price */}
-                        <div className="flex flex-col items-center md:items-start md:ml-4 w-full md:w-2/3">
-                            <span className="text-lg font-semibold">{product.name}</span>
-                            <span className="text-xl font-bold text-gray-700">{product.price}</span>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+const Shop = () => {
+  return (
+    <div className="bg-gray-100 min-h-screen py-8">
+      <div className="max-w-6xl mx-auto px-4">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden mb-6 flex flex-col md:flex-row"
+          >
+            <div className="md:w-1/3">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-48 md:h-auto object-cover"
+              />
+            </div>
+            <div className="md:w-2/3 p-4">
+              <h2 className="text-xl font-semibold text-gray-800">
+                {product.name}
+              </h2>
+              <p className="text-gray-500 text-sm mt-1">{product.description}</p>
+              <div className="mt-4 flex items-center space-x-4">
+                <span className="text-gray-400 line-through">
+                  {product.price}
+                </span>
+                <span className="text-red-500 font-semibold">
+                  {product.discountedPrice}
+                </span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-export default ShopList;
-
+export default Shop;
