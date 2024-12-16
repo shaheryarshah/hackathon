@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Featuredproducts (){
     return(
       <div>
@@ -12,7 +13,7 @@ export default function Featuredproducts (){
       <div className="flex flex-col sm:flex-row">
         <div className="p-4 lg:w-1/4 md:w-1/2 items-center">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
-            <img
+            <Image
               alt="team"
               className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp1.png"
@@ -74,7 +75,7 @@ export default function Featuredproducts (){
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
-            <img
+            <Image
               alt="team"
               className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp2.png"
@@ -133,7 +134,7 @@ export default function Featuredproducts (){
         </div>
         <div className="p-4  lg:w-1/4 md:w-1/2">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
-            <img
+            <Image
               alt="team"
               className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp3.png"
@@ -192,7 +193,7 @@ export default function Featuredproducts (){
         </div>
         <div className="p-4 lg:w-1/4 md:w-1/2">
           <div className="h-full shadow-lg flex flex-col items-center text-center">
-            <img
+            <Image
               alt="team"
               className="bg-slate-200 flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
               src="/fp4.png"
