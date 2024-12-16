@@ -1,6 +1,6 @@
 // pages/index.js
 import React from 'react';
-
+import Image from "next/image";
 const products = [
   {
     id: 1,
@@ -8,7 +8,7 @@ const products = [
     price: "$25.00",
     discountedPrice: "$20.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist1.png",
+    Image: "/shoplist1.png",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const products = [
     price: "$45.00",
     discountedPrice: "$40.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist2.png",
+    Image: "/shoplist2.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const products = [
     price: "$30.00",
     discountedPrice: "$25.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist3.png",
+    Image: "/shoplist3.png",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const products = [
     price: "$60.00",
     discountedPrice: "$55.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist4.png",
+    Image: "/shoplist4.png",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const products = [
     price: "$35.00",
     discountedPrice: "$30.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist5.png",
+    Image: "/shoplist5.png",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const products = [
     price: "$50.00",
     discountedPrice: "$45.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist6.png",
+    Image: "/shoplist6.png",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const products = [
     price: "$20.00",
     discountedPrice: "$15.00",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
-    image: "/shoplist7.png",
+    Image: "/shoplist7.png",
   },
 ];
 
@@ -71,7 +71,7 @@ const Shop = () => {
           >
             <div className="md:w-1/3">
               <img
-                src={product.image}
+                src={product.Image}
                 alt={product.name}
                 className="w-full h-48 md:h-auto object-cover"
               />
