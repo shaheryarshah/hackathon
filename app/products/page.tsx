@@ -1,12 +1,12 @@
 // pages/product.js
-
+import Image from "next/image";
 export default function ProductDetails() {
     return (
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Product Details</h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-            <img
+            <Image
               src="/p1.png"
               alt="Product"
               className="w-full h-auto rounded-lg"
@@ -42,19 +42,19 @@ export default function ProductDetails() {
           <h3 className="text-xl font-bold">Related Products</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="border p-4 rounded-lg">
-              <img src="/p2.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
+              <Image src="/p2.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
               <h4 className="mt-2 font-semibold">Men's Fashion Wear</h4>
               <p>$120</p>
               <p>⭐⭐⭐⭐⭐</p>
             </div>
             <div className="border p-4 rounded-lg">
-              <img src="/p3.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
+              <Image src="/p3.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
               <h4 className="mt-2 font-semibold">Women's Fashion</h4>
               <p>$140</p>
               <p>⭐⭐⭐⭐⭐</p>
             </div>
             <div className="border p-4 rounded-lg">
-              <img src="/p4.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
+              <Image src="/p4.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
               <h4 className="mt-2 font-semibold">Web Design Fashion</h4>
               <p>$130</p>
               <p>⭐⭐⭐⭐⭐</p>
