@@ -1,6 +1,6 @@
 // pages/index.js
 import Head from 'next/head';
-
+import Image from "next/image";
 export default function Shopex() {
   return (
     <div className="bg-white container px-5 mx-auto">
