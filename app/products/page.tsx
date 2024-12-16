@@ -43,13 +43,13 @@ export default function ProductDetails() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="border p-4 rounded-lg">
               <Image src="/p2.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
-              <h4 className="mt-2 font-semibold">Men's Fashion Wear</h4>
+              <h4 className="mt-2 font-semibold">Mens Fashion Wear</h4>
               <p>$120</p>
               <p>⭐⭐⭐⭐⭐</p>
             </div>
             <div className="border p-4 rounded-lg">
               <Image src="/p3.png" alt="Related Product" className="w-full h-auto rounded-t-lg" />
-              <h4 className="mt-2 font-semibold">Women's Fashion</h4>
+              <h4 className="mt-2 font-semibold">Womens Fashion</h4>
               <p>$140</p>
               <p>⭐⭐⭐⭐⭐</p>
             </div>
