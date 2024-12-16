@@ -46,7 +46,7 @@ const Login = () => {
             </a>
           </p>
           <p className="text-sm text-center text-gray-500">
-            Don't have an account?{' '}
+            Do not have an account?{' '}
             <a href="/signup" className="text-pink-500 hover:underline">
               Create an account
             </a>
