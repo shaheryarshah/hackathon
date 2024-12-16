@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 type Blog = {
   id: number;
   title: string;
@@ -15,7 +14,6 @@ type Blog = {
   Image: string;
 };
 
-
 const blogs: Blog[] = [
   {
     id: 1,
@@ -24,7 +22,7 @@ const blogs: Blog[] = [
     date: "December 9, 2024",
     category: "Design",
     excerpt: "This is a brief excerpt from the blog post.",
-    Image: "/blog1.png", 
+    Image: "/blog1.png",
   },
   {
     id: 2,
@@ -33,7 +31,7 @@ const blogs: Blog[] = [
     date: "December 8, 2024",
     category: "Technology",
     excerpt: "This is another brief excerpt from the second blog post.",
-    Image: "/blog2.png", 
+    Image: "/blog2.png",
   },
   {
     id: 3,
@@ -42,7 +40,7 @@ const blogs: Blog[] = [
     date: "December 7, 2024",
     category: "Travel",
     excerpt: "An excerpt from the third blog post about travel.",
-    Image: "/blog3.png", 
+    Image: "/blog3.png",
   },
 ];
 
@@ -64,7 +62,7 @@ const BlogPage = () => {
         {/* Blog Posts Section */}
         <div className="lg:w-1/2">
           {blogs.map((blog) => (
-            <div>
+            <div key={blog.id}> {/* Added key here */}
               <Image
                 src={blog.Image}
                 alt={blog.title}
@@ -80,22 +78,22 @@ const BlogPage = () => {
                 </div>
                 <h2 className="text-xl font-bold mt-2 text-[#001F54]">
                   {blog.title}
-                </h2> 
+                </h2>
                 <p className="text-gray-600 mt-2">{blog.excerpt}</p>
                 <a
                   href="#"
                   className="text-[#001F54] font-semibold mt-2 inline-block"
                 >
                   Read More
-                </a> 
+                </a>
               </div>
             </div>
           ))}
         </div>
 
-     
+        {/* Sidebar Section */}
         <div className="lg:w-1/4 lg:pl-10 mt-10 lg:mt-0">
-     
+          {/* Search Box */}
           <div className="mb-6">
             <h3 className="text-lg font-bold text-[#001F54] mb-2">Search</h3>
             <input
@@ -105,7 +103,7 @@ const BlogPage = () => {
             />
           </div>
 
-          
+          {/* Categories Section */}
           <div className="mb-6">
             <h3 className="text-lg font-bold text-[#001F54] mb-2">Categories</h3>
             <ul className="space-y-2 text-gray-600">
@@ -115,9 +113,9 @@ const BlogPage = () => {
             </ul>
           </div>
 
-          
+          {/* Recent Posts Section */}
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-[#001F54] mb-2">Recent Posts</h3> {/* Dark blue */}
+            <h3 className="text-lg font-bold text-[#001F54] mb-2">Recent Posts</h3>
             <ul className="space-y-2">
               {[
                 { id: 4, Image: "/blog4m.png", title: "Recent Blog 1", date: "December 6, 2024" },
@@ -133,7 +131,7 @@ const BlogPage = () => {
                     className="w-16 h-16 object-cover rounded-md"
                   />
                   <div>
-                    <h4 className="text-sm font-semibold text-[#001F54]">{blog.title}</h4> 
+                    <h4 className="text-sm font-semibold text-[#001F54]">{blog.title}</h4>
                     <p className="text-sm text-gray-500">{blog.date}</p>
                   </div>
                 </li>
@@ -141,14 +139,14 @@ const BlogPage = () => {
             </ul>
           </div>
 
-         
+          {/* Tags Section */}
           <div>
-            <h3 className="text-lg font-bold text-[#001F54] mb-2">Tags</h3> 
+            <h3 className="text-lg font-bold text-[#001F54] mb-2">Tags</h3>
             <div className="flex flex-wrap gap-2">
               {["Design", "Technology", "Travel", "Fashion", "Food"].map(
                 (tag, index) => (
                   <span
-                    key={index}
+                    key={index} {/* Added key here */}
                     className="px-3 py-1 bg-gray-200 text-sm text-gray-600 rounded-full"
                   >
                     {tag}
